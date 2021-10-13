@@ -1,0 +1,25 @@
+//base
+@import"base/reset";
+@import"base/tipo";
+
+//layout
+@import"layout/index";
+@import"layout/turnos";
+@import"layout/servicios";
+@import"layout/productos";
+@import"layout/blog";
+@import"layout/precios";
+@import"layout/404";
+
+//utilities
+@import"utilities/variables";
+@import"utilities/mixin";
+@import"utilities/extend";
+
+
+
+//background de la grilla principal
+.grilla{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+}

@@ -1,0 +1,136 @@
+@import "../utilities/variables";
+
+.body{
+    background-color: $colorBg;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: $colorBg;
+    height: 70px;
+    &__title{
+        text-decoration: none;
+        h1:hover{
+            transform: scaleY(1);
+            cursor: pointer;
+        }
+        h1{
+            color: $claro;
+            padding: 10px 15px ;
+            border-right: solid 1px $claro;
+            font-size: 40px;
+            font-family: "Ephesis", cursive;
+            span{
+                color: $color3;
+                margin-right: 8px;
+            }
+        }
+    }
+    &__nav{
+        ul{
+            margin-left: 15px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            li{
+                text-decoration: none;
+                margin: 15px 5px;
+                padding: 10px 10px;
+                a{
+                    @extend %ancor;
+                }
+            }
+        }
+    }
+    &__redes{
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-left: 20px;
+            li{
+                @extend %redes;
+            }
+        }
+    }
+}
+//main
+.precios{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    place-items: center;
+    height: 650px;
+    &__hijo{
+        text-align: center;
+        color: #F5EEF8;
+        font-size: 22px;
+        font-family: sans-serif;
+        border: 2px solid $color1;
+        height: 300px;
+        width: 350px;
+        h2{
+            font-size: 28px;
+            font-family: $letra;
+            text-align: center;
+            text-align: center;
+            color: $colorText;
+        }
+        li{
+            list-style: none;
+            font-size: 22px;
+            font-family: $letra;
+            font-weight: 300;
+        }
+    }
+}
+
+
+//footer
+.footer{
+    background-color: $colorBg;
+    height: 210px;
+    display: grid;
+    padding: 8px 10px;
+    grid-template-columns: 6fr 6fr;
+    justify-items: center;
+    align-items: center;
+    &__div1{
+        h4{
+            font-family: $letra;
+            font-weight: 300;
+            text-align: center;
+            font-size: 1rem;
+            padding: 12px;
+            margin-top: 20px;
+            color: $colorText;
+        }
+        &__informacion{
+            font-family: $letra;
+            font-weight: 500;
+            font-size: 1rem;
+            padding: 20px 20px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            color: black;
+            background-color: #F5EEF8;
+            &__mensaje{
+                text-align: center;
+            }
+        }
+    }
+    &__div2{
+        margin-right: 120px;
+    }
+    h5{
+        font-family: $letra;
+        font-weight: 300;
+        font-size: 15px;
+        margin-top: 12px;
+        text-align: right;
+        color: white;
+        background-color: black;
+    }
+}

@@ -1,0 +1,52 @@
+//header
+%ancor{
+    color: $colorText;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+%redes{
+    text-decoration: none;
+    margin: 14px 4px;
+    padding: 10px 3px;
+    img:hover{
+        transform: scaleX(1.1);
+    }
+}
+
+//footer
+%texto{
+    font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            text-align: center;
+            font-size: 1rem;
+            padding: 12px;
+            margin-top: 20px;
+            color: $colorText;
+}
+
+%div{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 20px 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    color: black;
+    background-color: #F5EEF8;
+}
+
+%h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 12px;
+    text-align: right;
+    color: white;
+    background-color: black;
+}
