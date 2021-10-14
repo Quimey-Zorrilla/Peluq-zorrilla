@@ -2,63 +2,6 @@
 .body{
     background-color: $colorBg;
 }
-.header{
-    display: flex;
-    justify-content: center;
-    background-color: $colorBg;
-    height: 70px;
-    &__title{
-        text-decoration: none;
-        h1:hover{
-            transform: scaleY(1.1);
-            cursor: pointer;
-        }
-        h1{
-            color: $claro;
-            padding: 10px 15px ;
-            border-right: solid 1px $claro;
-            font-size: 40px;
-            font-family: "Ephesis", cursive;
-            span{
-                color: $color3;
-                margin-right: 8px;
-            }
-        }
-    }
-    &__nav{
-        ul{
-            margin-left: 15px;
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            li{
-                text-decoration: none;
-                margin: 15px 5px;
-                padding: 10px 10px;
-                a{
-                    @extend %ancor;
-                }
-                a:hover{
-                    transform: scaleY(1.1);
-                    cursor: pointer;
-                    color: $color1;
-                }
-            }
-        }
-    }
-    &__redes{
-        ul{
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-left: 20px;
-            li{
-                @extend %redes;
-            }
-        }
-    }
-}
-
 //main
 .carousel-item{
     img{
@@ -91,6 +34,13 @@
         font-weight: 300;
         color: $colorText;
         font-size: 20px;
+        b{
+            color: black;
+        }
+        i{
+            color: black;
+            background-color: $colorText;
+        }
     }
     span{
         font-family: $letra;
@@ -118,39 +68,54 @@
         grid-area: "tutorial";
     }
     .carrusel{
-        height: 340px;
+        height: 450px;
         margin-top: 30px;
         display: flex;
         justify-content: center;
         justify-items: center;
         align-items: center;
     }
+    @include movil{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        .encabezado{
+            display: none;
+        }
+        .cuerpo{
+            display: none;
+        }
+        .carrusel{
+            display: none;
+        }
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        .encabezado{
+            display: none;
+        }
+        .carrusel{
+            display: none;
+        }
+    }
 }
-
-//footer
-.footer{
-    background-color: $colorBg;
-    height: 210px;
-    display: grid;
-    padding: 8px 10px;
-    grid-template-columns: 6fr 6fr;
-    justify-items: center;
-    align-items: center;
-    &__div1{
-        h4{
-            @extend %texto;
-        }
-        &__informacion{
-            @extend %div;
-            &__mensaje{
-                text-align: center;
-            }
-        }
-    }
-    &__div2{
-        margin-right: 120px;
-    }
-    h5{
-        @extend %h5;
-    }
+.b2{
+    color: $colorText;
+    font-family: $letra;
+    font-weight: 500;
+}
+.subTitulo{
+    text-align: justify;
+    color: black;
+    font-family: $letra;
+    font-weight: 500;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.b3{
+    color: $claro;
+    font-size: 30px;
 }

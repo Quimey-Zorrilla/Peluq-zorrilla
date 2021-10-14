@@ -5,43 +5,50 @@
         <title>BLOG | Pink Sheriff</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--css-->
         <link rel="stylesheet" href="../css/estilos.css">
+        <!--meta description-->
         <meta name="description" content="No te quedes sin saber las últimas novedades, visita nuestro blog y contanos tu experiencia">
         <!--keywords-->
-        <meta name="keywords" content="BLOG, TENDENCIAS, SUMMER, PELUQUERIA, PINK SHERIFF">
+        <meta name="keywords" content="PINK SHERIFF, BLOG, TENDENCIAS, SUMMER, PELUQUERIA, PINK SHERIFF">
     </head>
     <body class="body">
-        <header class="header"><!--inicio header-->
-            <a href="../index.html" class="header__title"><!--logo-->
-                <h1> <span>Pink</span> Sheriff</h1>
-            </a>
-            <nav class="header__nav"><!--menu de navegacion-->
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/turnos.html">Turnos</a></li>
-                    <li><a href="../pages/servicios.html">Servicios</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a href="../pages/blog.html">Blog</a></li>
-                </ul>
+        <header><!--inicio header-->
+            <nav class="navbar navbar-expand-lg navbar-dark menuNavegacion">
+                <div class="container-fluid">
+                    <a class="navbar-brand tituloMenu" href="../index.html">Pink Sheriff</a><!--logo/titulo-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navegacion" id="navbarNavAltMarkup">
+                        <div class="navbar-nav"><!--menu de navegacion-->
+                            <a class="nav-link active ancor ancor--home" aria-current="page" href="../index.html" >Home</a>
+                            <a class="navbar-nav ancor" href="../pages/turnos.html">Turnos</a>
+                            <a class="navbar-nav ancor" href="../pages/productos.html">Productos</a>
+                            <a class="navbar-nav ancor" href="../pages/servicios.html">Servicios</a>
+                            <a class="navbar-nav ancor" href="../pages/blog.html">Blog</a>
+                            <div><!--redes-->
+                                <ul class="redesProd">
+                                    <li><a href="https://es-la.facebook.com/" target="_BLANK"><img src="../img/facebook.png" alt="facebook"></a></li>
+                                    <li><a href="https://twitter.com/?lang=es" target="_BLANK"><img src="../img/gorjeo.png" alt="twitter"></a></li>
+                                    <li><a href="https://www.instagram.com/?hl=es" target="_BLANK"><img src="../img/instagram.png" alt="instagram"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <div class="header__redes"><!--redes-->
-                <ul>
-                    <li><a href="https://es-la.facebook.com/"><img src="../img/facebook.png" alt="facebook"></a></li>
-                    <li><a href="https://twitter.com/?lang=es"><img src="../img/gorjeo.png" alt="twitter"></a></li>
-                    <li><a href="https://www.instagram.com/?hl=es"><img src="../img/instagram.png" alt="instagram"></a></li>
-                </ul>
-            </div>
         </header>
-        <hr>
         <main><!--contenido principal del blog-->
             <div class="container">
                 <div class="encabezado">
                     <h2>Summer 21/22</h2>
-                    <h3>Tendencias en color y peinados</h3>
-                    <p>Hablar de los cortes de pelo y peinados de moda para primavera verano es hablar de cambio, de animarse a diferentes estilos, ver lo que está de onda y lo que cayó en el olvido, actualzarse y adaptar ideas a nuestra onda personal. Te mostramos un panorama de la gran variedad de recursos que hay para dar un refresh a nuestro look.</p>
-                    <P>Los cortes de onda: El famoso corte bob o también llamado ahora dlob y bob french, que se diistingue por ser recto por encima de los hombros y favorece a todo tipo de rostro.
+                    <h3 class="subTitulo">Color <b class="b3">&</b> Peinados</h3>
+                    <p>Hablar de los cortes de pelo y peinados de moda para <b>primavera verano</b> es hablar de cambio, de animarse a diferentes estilos, ver lo que está de onda y lo que cayó en el olvido, actualzarse y adaptar ideas a nuestra onda personal. <i>Te mostramos un panorama de la gran variedad de recursos que hay para dar un refresh a nuestro look.</i> </p>
+                    <P>Los cortes de onda: El famoso <b>corte bob</b> o también llamado ahora dlob y <b>bob french</b> , que se diistingue por ser recto por encima de los hombros y favorece a todo tipo de rostro.
                     </P>
                 </div>
                 <div class="cuerpo">
@@ -59,11 +66,11 @@
                     <h2>Lo nuevo en COLOR:</h2>
                     <p>colores protagonistas en esta primavera/verano 21/22
                         <ul>
-                            <li>Tonos chocolate, en los que trabajan los caramelos para resaltar los rasgos y aportar luminosidad al rostro.</li>
-                            <li>Tonos rubios con matices dorados, para lucir un cabello natural. Se dejan los rubios fríos para destacar un color más natural para el verano.</li>
-                            <li>Tonos cobrizos</li>
-                            <li>Platinado: sigue siendo protagonista, animándose al decolorado total desde raíz.</li>
-                            <li>Rubios rosados y rojizos: marcarán tendencia, como así también el cabello rosa.</li>
+                            <li>Tonos <b class="b2">chocolate</b>, en los que trabajan los caramelos para resaltar los rasgos y aportar luminosidad al rostro.</li>
+                            <li>Tonos <b class="b2">rubios con matices dorados</b>, para lucir un cabello natural. Se dejan los rubios fríos para destacar un color más natural para el verano.</li>
+                            <li>Tonos <b class="b2">cobrizos</b></li>
+                            <li><b class="b2">Platinado</b> sigue siendo protagonista, animándose al decolorado total desde raíz.</li>
+                            <li><b class="b2">Rubios rosados y rojizos</b> marcarán tendencia, como así también el cabello rosa.</li>
                         </ul>
                     </p>
                 </div><!--fotos-->
@@ -109,14 +116,14 @@
         <hr>
         <footer class="footer"><!--inicio footer-->
             <div class="footer__div1">
-                <h4>¿Queres hacernos alguna consulta? - ¿Dejarnos alguna sugerencia?</h4>
+                <h4>¿Quieres hacernos alguna consulta? - ¿Dejarnos alguna sugerencia?</h4>
                 <div class="footer__div1__informacion">
                     <div>
                         <span>Nombre</span><input type="text" name="" placeholder="Nombre">
                         <span>E-mail</span><input type="email" name="" placeholder="e-mail">
                     </div>
                     <div class="footer__div1__informacion__mensaje">
-                        <span>Mensaje</span><input type="text" name="" placeholder="Mensaje"><button type="submit">ENVIAR</button>
+                        <span>Mensaje</span><input class="inputMsj"type="text" name="" placeholder="Mensaje"><button type="submit">ENVIAR</button>
                     </div>
                 </div>
             </div>
@@ -124,8 +131,8 @@
                 <aside>
                     <a href="https://www.google.com.ar/maps"><img src="../img/mapa.png" alt="ubicacion"></a>
                 </aside>
+                <h5>copyright@QuimeyZorrilla</h5>
             </div>
-            <h5>copyright@QuimeyZorrilla</h5>
         </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     </body>

@@ -1,0 +1,93 @@
+.navegacion{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-right: 120px;
+    @include movil{
+        .ancor--home{
+            display: none;
+        }
+        margin-right: 0px;
+    }
+    @include tablet{
+        .ancor--home{
+            display: none;
+        }
+        margin-right: 0px;
+    }
+    div{
+        a{
+            margin-right: 6px;
+        }
+    }
+}
+.ancor{
+    font-family: 'Neucha', cursive;
+    font-size: 22px;
+    padding: 5px 5px;
+    color:#e7d6d5;
+    margin-top: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 1,2px;
+    
+}
+.ancor:hover{
+    transform: scaleY(1.1);
+    color: $color1;
+}
+.tituloMenu{
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 30px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    @include movil{
+        margin-left: 0px;
+        font-size: 28px;
+    }
+    @include tablet{
+        margin-left: 0px;
+    }
+}
+.menuNavegacion{
+    color: #e7d6d5;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: #886b82;
+    button{
+        color: #e7d6d5;
+    }
+}
+.menuNavegacion1{
+    color: #e7d6d5;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding: 5px 5px;
+    background-color: #886b82;
+    button{
+        color: #e7d6d5;
+    }
+}
+.redesProd{
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+    padding: 5px 5px;
+    margin-left: 30px;
+    li{
+        margin-top: 4px;
+        margin-right: 6px;
+    }
+    img:hover{
+        cursor:grabbing;
+    }
+    @include movil{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
+}

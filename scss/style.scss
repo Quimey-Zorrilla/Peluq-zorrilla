@@ -10,16 +10,11 @@
 @import"layout/blog";
 @import"layout/precios";
 @import"layout/404";
+@import"layout/navegacion";
+@import"layout/footer";
+
 
 //utilities
 @import"utilities/variables";
 @import"utilities/mixin";
 @import"utilities/extend";
-
-
-
-//background de la grilla principal
-.grilla{
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-}

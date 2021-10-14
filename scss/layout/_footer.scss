@@ -1,0 +1,80 @@
+.footer{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    &__div1{
+        h4{
+            @extend %texto;
+            margin-bottom: 20px;
+        }
+        &__informacion{
+            height: 110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #F5EEF8;
+            div{
+                span{
+                    font-family: 'Raleway', sans-serif;
+                    padding: 10px;
+                    margin-top: 5px;
+                }
+                input{
+                    margin-top: 5px;
+                    margin-bottom: 12px;
+                }
+            }
+            &__mensaje{
+                span{
+                    font-family: 'Raleway', sans-serif;
+                    padding: 10px;
+                    margin-top: 5px;
+                }
+                .inputMsj{
+                    margin-top: 8px;
+                }
+                button{
+                    margin-left: 55px;
+                    padding: 3px 8px;
+                    background-color: $colorBg;
+                    color: $claro;
+                    border: solid 1px rgb(205,169,178);
+                    
+                }
+            }
+        }
+        @include movil{
+            display: none;
+        }
+        @include tablet{
+            display: none;
+        }
+    }
+    &__div2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            margin-top: 60px;
+            @include movil{
+                margin-top: 0px
+            }
+        }
+        h5{
+            @extend %h5;
+            @include movil{
+                text-align: center;
+                margin-top: 40px;
+            }
+        }
+        @include movil{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

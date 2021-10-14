@@ -6,34 +6,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--css-->
         <link rel="stylesheet" href="../css/estilos.css">
+        <!--meta description-->
         <meta name="description" content="Para complementar tu tratamiento capilar, Pink Sheriff te ofrece una amplia variedad de productos. Consulta nuestra tienda online">
         <!--keywords-->
-        <meta name="keywords" content="STORE, TIENDA ONLINE, PRODUCTOS, ACCESORIOS">
+        <meta name="keywords" content="PINK SHERIFF,STORE, TIENDA ONLINE, PRODUCTOS, ACCESORIOS">
     </head>
     <body class="body">
-        <header class="header"><!--inicio header-->
-            <a href="../index.html" class="header__title"><!--logo-->
-                <h1> <span>Pink</span> Sheriff</h1>
-            </a>
-            <nav class="header__nav"><!--menu de navegacion-->
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/turnos.html">Turnos</a></li>
-                    <li><a href="../pages/servicios.html">Servicios</a></li>
-                    <li><a href="../pages/productos.html">Productos</a></li>
-                    <li><a href="../pages/blog.html">Blog</a></li>
-                </ul>
+        <header><!--inicio header-->
+            <nav class="navbar navbar-expand-lg navbar-dark menuNavegacion">
+                <div class="container-fluid">
+                    <a class="navbar-brand tituloMenu" href="../index.html">Pink Sheriff</a><!--logo/titulo-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navegacion" id="navbarNavAltMarkup">
+                        <div class="navbar-nav"><!--menu de navegacion-->
+                            <a class="nav-link active ancor ancor--home" aria-current="page" href="../index.html" >Home</a>
+                            <a class="navbar-nav ancor" href="../pages/turnos.html">Turnos</a>
+                            <a class="navbar-nav ancor" href="../pages/productos.html">Productos</a>
+                            <a class="navbar-nav ancor" href="../pages/servicios.html">Servicios</a>
+                            <a class="navbar-nav ancor" href="../pages/blog.html">Blog</a>
+                            <div><!--redes-->
+                                <ul class="redesProd">
+                                    <li><a href="https://es-la.facebook.com/" target="_BLANK"><img src="../img/facebook.png" alt="facebook"></a></li>
+                                    <li><a href="https://twitter.com/?lang=es" target="_BLANK"><img src="../img/gorjeo.png" alt="twitter"></a></li>
+                                    <li><a href="https://www.instagram.com/?hl=es" target="_BLANK"><img src="../img/instagram.png" alt="instagram"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <div class="header__redes"><!--redes-->
-                <ul>
-                    <li><a href="https://es-la.facebook.com/"><img src="../img/facebook.png" alt="facebook"></a></li>
-                    <li><a href="https://twitter.com/?lang=es"><img src="../img/gorjeo.png" alt="twitter"></a></li>
-                    <li><a href="https://www.instagram.com/?hl=es"><img src="../img/instagram.png" alt="instagram"></a></li>
-                </ul>
-            </div>
         </header>
-        <hr>
         <main>
             <h2>Store</h2>
                 <div class="avisos"><!--avisos comerciales-->
@@ -78,16 +86,17 @@
                     </section>
                 </div>
         </main>
+        <hr>
         <footer class="footer"><!--inicio footer-->
             <div class="footer__div1">
-                <h4>¿Queres hacernos alguna consulta? - ¿Dejarnos alguna sugerencia?</h4>
+                <h4>¿Quieres hacernos alguna consulta? - ¿Dejarnos alguna sugerencia?</h4>
                 <div class="footer__div1__informacion">
                     <div>
                         <span>Nombre</span><input type="text" name="" placeholder="Nombre">
                         <span>E-mail</span><input type="email" name="" placeholder="e-mail">
                     </div>
                     <div class="footer__div1__informacion__mensaje">
-                        <span>Mensaje</span><input type="text" name="" placeholder="Mensaje"><button type="submit">ENVIAR</button>
+                        <span>Mensaje</span><input class="inputMsj"type="text" name="" placeholder="Mensaje"><button type="submit">ENVIAR</button>
                     </div>
                 </div>
             </div>
@@ -95,8 +104,9 @@
                 <aside>
                     <a href="https://www.google.com.ar/maps"><img src="../img/mapa.png" alt="ubicacion"></a>
                 </aside>
+                <h5>copyright@QuimeyZorrilla</h5>
             </div>
-            <h5>copyright@QuimeyZorrilla</h5>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

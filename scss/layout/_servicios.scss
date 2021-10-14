@@ -2,63 +2,6 @@
 .body{
     background-color: $colorBg;
 }
-.header{
-    display: flex;
-    justify-content: center;
-    background-color: $colorBg;
-    height: 70px;
-    &__title{
-        text-decoration: none;
-        h1:hover{
-            transform: scaleY(1);
-            cursor: pointer;
-        }
-        h1{
-            color: $claro;
-            padding: 10px 15px ;
-            border-right: solid 1px $claro;
-            font-size: 40px;
-            font-family: "Ephesis", cursive;
-            span{
-                color: $color3;
-                margin-right: 8px;
-            }
-        }
-    }
-    &__nav{
-        ul{
-            margin-left: 15px;
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            li{
-                text-decoration: none;
-                margin: 15px 5px;
-                padding: 10px 10px;
-                a{
-                    @extend %ancor
-                }
-                a:hover{
-                    transform: scaleY(1.1);
-                    cursor: pointer;
-                    color: $color1;
-                }
-            }
-        }
-    }
-    &__redes{
-        ul{
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-left: 20px;
-            li{
-                @extend %redes;
-            }
-        }
-    }
-}
-
 //main
 .contenedorServicios{
     display: grid;
@@ -93,7 +36,9 @@
                 font-weight: 300;
                 font-size: 16px;
                 color: $colorText;
-
+                @include tablet{
+                    text-align: center;
+                }
             }
             div{
                 img{
@@ -103,6 +48,43 @@
             }
             
         }
+        @include movil{
+            width: auto;
+            align-items: center;
+            height: 120px;
+        }
+        @include tablet{
+            width: auto;
+            align-items: center;
+            height: 120px;
+        }
+    }
+    @include movil{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: auto;
+        img{
+            display: none;
+        }
+    }
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        img{
+            display: none;
+        }
+    }
+    @include laptop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 h2{
@@ -123,32 +105,5 @@ h2{
             margin: 30px 30px;
             color: #f8f9f8;
         }
-    }
-}
-//footer
-.footer{
-    background-color: $colorBg;
-    height: 210px;
-    display: grid;
-    padding: 8px 10px;
-    grid-template-columns: 6fr 6fr;
-    justify-items: center;
-    align-items: center;
-    &__div1{
-        h4{
-            @extend %texto;
-        }
-        &__informacion{
-            @extend %div;
-            &__mensaje{
-                text-align: center;
-            }
-        }
-    }
-    &__div2{
-        margin-right: 120px;
-    }
-    h5{
-        @extend %h5;
     }
 }

@@ -3,117 +3,62 @@
 @import "../base/tipo";
 @import "../utilities/mixin";
 @import "../utilities/extend";
+
+
+body{
+    background-color: $colorBg;
+}
 .grilla{
+    background-image: url(../../img/fondo.jpg);
+    background-size: cover;
     width: 100%;
     height: 900px;
     display: flex;
     flex-direction: column;
     @include movil{
         height: auto;
+        background-image: none;
+        .mainIndex{
+            h3{
+                margin-top: 40px;
+                font-size: 28px;
+                span{
+                    margin-top: 20px;
+                    color: $claro;
+                }
+            }
+            
+            p{
+                margin-top: 40px;
+                font-size: 24px;
+            }
+        }
+        
     }
     @include tablet{
         height: auto;
         display: block;
-    }
-    &__index{
-        background-color: $colorBg;
-        display: flex;
-        justify-content: center;
-        height: 70px;
-        
-        
-        &__title{
-            text-decoration: none;
-            h1:hover{
-                transform: scaleY(1);
-                cursor: pointer;
+        background-image: none;
+        .mainIndex{
+            h2{
+                margin-top: 50px;
             }
-            h1{
-                color: $claro;
-                padding: 10px 15px;
-                border-right: solid 1px $claro;
-                font-size: 40px;
-                font-family: "Ephesis", cursive;
+            h3{
+                margin-top: 40px;
+                font-size: 28px;
                 span{
-                    margin-right: 8px;
-                    color: $colorText;
+                    margin-top: 20px;
+                    color: $claro;
                 }
             }
-            @include movil{
-                display:none
-            }
-            @include tablet{
-                display: none;
-            }
-            @include laptop{
-                display: none;
-            }
-        }
-        ul{
-            margin-left: 15px;
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            li{
-                text-decoration: none;
-                margin: 15px 5px;
-                padding: 10px 10px;
-                a{
-                    @extend %ancor;
-                }
-                a:hover{
-                    transform: scaleY(1.1);
-                    cursor: pointer;
-                    color: $color1;
-                }
-            }
-            @include movil{
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr;
-                margin: 0px 0px;
-                padding: 0px 0px;
-                text-align: center;
-                .item{
-                    display: none;
-                }
-            }
-            @include tablet{
-                li{
-                    font-size: 15px;
-                    font-weight: 100;
-                    padding: 4px;
-                    margin: 6px 4px;
-                }
-            }
-
-        }
-        &__redes{
-            ul{
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                margin-left: 20px;
-                li{
-                    @extend %redes; 
-                    
-                }
-            }
-            @include movil{
-                display: none;
-                margin-left: 0px;
-            }
-        }
-        @include movil{
-            height: 150px;
-        }
-        @include tablet{
-            height: auto;
-            display: block;
-            margin-left: 0px;
             
+            p{
+                margin-top: 40px;
+                font-size: 24px;
+            }
         }
     }
+    
 }
 //main
 .mainIndex{
@@ -127,30 +72,34 @@
     h2{
         color: black;
         text-align: right;
-        margin-top: 70px;
+        margin-top: 66px;
         font-family: $letra;
         font-weight: 100;
-        font-size: 40px;
+        font-size: 34px;
         text-transform: uppercase;
     }
     h3{
         color: black;
-        margin-top: 25px;
+        margin-top: 10px;
+        letter-spacing: 1px;
         text-align: center;
         font-family: $letra;
         font-weight: 300;
-        font-size: 40px;
+        font-size: 32px;
         span{
+            font-family: $letra;
             text-align: left;
-            font-size: 43px;
+            font-size: 35px;
             color: $colorBg;
+            font-weight: 300;
         }
     }
     p{
         color: black;
         font-weight: 500;
-        margin-top: 28px;
-        font-size: 23px;
+        margin-top: 10px;
+        font-size: 27px;
+        word-spacing: 2px;
         text-align: center;
         font-family: $letra;
     }
@@ -172,88 +121,13 @@
     }
 }
 
-//footer
-.footer{
-    background-color: $colorBg;
-    height: 210px;
-    display: grid;
-    padding: 8px 10px;
-    grid-template-columns: 6fr 6fr;
-    justify-items: center;
-    align-items: center;
-    
-    &__div1{
-        h4{
-            @extend %texto;
-            @include movil{
-                display: none
-            }
-            @include tablet{
-                display: none;
-            }
-        }
-        &__informacion{
-            @extend %div;
-            &__mensaje{
-                text-align: center;
-            }
-        }
-        @include movil{
-            display: none
-        }
-        @include tablet{
-            display: none;
-        }
-    }
-    &__div2{
-        margin-right: 120px;
-        @include movil{
-            display: none
-        }
-        @include tablet{
-            display: none;
-        }
-        @include laptop{
-            margin-right: 0px
-        }
-    }
-    h5{
-        @extend %h5;
-
-        @include movil{
-            display: none
-        }
-        @include tablet{
-            display: none;
-        }
-        @include laptop{
-            display: none;
-        }
-    }
-    @include movil{
-        background-image: url(../../img/portada.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-    }
-    @include tablet{
-        background-image: url(../../img/portada.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-    }
-    @include laptop{
-        display: flex;
-        justify-content: space-between;
-    }
-}
 .suscripcionBoton{
     background: rgb(205,169,178);
     background: linear-gradient(162deg, rgba(205,169,178,1) 0%, rgba(136,107,130,1) 40%, rgba(231,214,213,1) 89%);
     height: 45px;
     width: 185px;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
     border: 1px solid whitesmoke;
     &__palabra{
         text-align: center;
