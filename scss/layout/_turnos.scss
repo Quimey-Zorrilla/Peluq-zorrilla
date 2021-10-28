@@ -177,6 +177,7 @@ h1{
     div{
         color: blanchedalmond;
         h2{
+            font-size: 22px;
             text-align: justify;
             margin-left: 20px;
             @include laptop{
@@ -193,6 +194,7 @@ h1{
     }
     h3{
         color: blanchedalmond;
+        font-size: 24px;
         @include laptop{
             font-size: 22px;
             margin: 8px 8px;
