@@ -3,95 +3,70 @@
     background-color: $colorBg;
 }
 //main
+h2{
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 50px;
+}
 .contenedorServicios{
     display: grid;
-    grid-template-columns: 695px 695px ;
-    grid-template-rows: repeat(3, 8fr);
-    row-gap: 80px;
-    div{
-        background-color: transparent;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: unset;
-        height: 372px;
-        width: 650px;
-        text-align: center;
-        .trabajos{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 260px;
-            margin-left: 30px;
-            h3{
-                font-family: $letra;
-                font-weight: 500;
-                font-size: 22px;
-                text-align: center;
-                margin: 8px;
-                color: $claro;
-            }
-            p{
-                font-family: $letra;
-                font-weight: 300;
-                font-size: 16px;
-                color: $colorText;
-                @include tablet{
-                    text-align: center;
-                }
-            }
-            div{
-                img{
-                    height:370px ;
-                    width: 420px;
-                }
-            }
-            
-        }
+    grid-template-columns: 40% 40%;
+    grid-template-rows: repeat(1fr);
+    grid-column-gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+    img{
+        height: 420px;
         @include movil{
-            width: auto;
-            align-items: center;
-            height: 120px;
+            display: none;
         }
         @include tablet{
-            width: auto;
-            align-items: center;
-            height: 120px;
+            display: none;
         }
+        @include laptop{
+            height: 300px;
+        }
+    }
+    div{
+        display: flex;
+        margin-bottom: 45px;
     }
     @include movil{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: auto;
-        width: auto;
-        img{
-            display: none;
-        }
-    }
-    @include tablet{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-        width: auto;
-        img{
-            display: none;
-        }
-    }
-    @include laptop{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
-h2{
+.trabajos{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid $claro;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 10px 10px;
-    margin: 20px;
+    h3{
+        text-align: center;
+        color: $colorText;
+        font-family: $letra;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 4px 8px;
+        margin-bottom: 30px;
+    }
+    p{
+        text-align: center;
+        color: $colorText;
+        font-family: $letra;
+        font-size:18px;
+        font-weight: 300;
+        margin-top: 40px;
+    }
 }
+.trabajos:hover{
+    border-top: 2px solid $claro;
+}
+
+
 .listaPrecios{
     a{
         text-decoration: none;

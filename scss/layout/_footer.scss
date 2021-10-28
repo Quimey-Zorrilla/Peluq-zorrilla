@@ -1,21 +1,21 @@
 .footer{
-    height: 150px;
+    height: 320px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
     &__div1{
         h4{
             @extend %texto;
             margin-bottom: 20px;
         }
         &__informacion{
-            height: 110px;
+            height: 150px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: #F5EEF8;
+            box-shadow: 6px 6px 6px black;
             div{
                 span{
                     font-family: 'Raleway', sans-serif;
@@ -41,8 +41,7 @@
                     padding: 3px 8px;
                     background-color: $colorBg;
                     color: $claro;
-                    border: solid 1px rgb(205,169,178);
-                    
+                    border-radius: 40px;
                 }
             }
         }
@@ -55,26 +54,55 @@
     }
     &__div2{
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
-        img{
-            margin-top: 60px;
+        width: 85%;
+        &__redes{
+            margin-top: 26px;
+            display: flex;
+            flex-direction: column;
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    padding: 0px 8px;
+                }
+            }
+            h5{
+                font-family: 'Raleway', sans-serif;
+                font-size: 1rem;
+                margin-left: 35px;
+                @include tablet{
+                    display: none;
+                }
+            }
             @include movil{
-                margin-top: 0px
+                display: flex;
+                flex-direction: column;
             }
         }
-        h5{
-            @extend %h5;
+        &__ubicacion{
+            margin-top: 24px;
+            ul{
+                margin-right: 80px;
+                display: flex;
+                list-style: none;
+            }
+            li{
+                padding: 0px 8px;
+            }
             @include movil{
-                text-align: center;
-                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+                margin-left: 45px;
+                margin-top: 55px;
             }
         }
         @include movil{
             display: flex;
             flex-direction: column;
-            justify-content: center;
         }
+    }
+    @include tablet{
+        height: 150px;
     }
 }

@@ -12,12 +12,16 @@ h2{
     font-family: $letra;
     font-weight: 300;
     text-transform: uppercase;
+    margin-bottom: 45px;
+}
+.mainTurnos{
+    margin-top: 80px;
 }
 .sucursales{
     h2{
         font-family: $letra;
         font-weight: 100;
-        text-align: left;
+        text-align: center;
         padding: 10px;
         margin: 20px;
         font-size: 30px;
@@ -28,13 +32,12 @@ h2{
         display: grid;
         padding: 10px 10px;
         grid-template-columns: repeat(4, 4fr);
-        place-items: center;
+        justify-content: space-evenly;
         .sucursales__local{
-            background-color: $claro;
-            border: solid 1px $color1;
             display: flex;
             flex-direction: column;
-            padding: 2rem;
+            padding: 1rem;
+            margin-right: 4px;
             justify-content:space-between;
             justify-items: center;
             align-items: center;
@@ -42,24 +45,47 @@ h2{
                 font-family: $letra;
                 font-weight: 500;
                 text-align: start;
-                font-size: 20px;
+                font-size: 30px;
                 word-spacing: 1px;
                 padding: 5px 8px;
+                color: black;
+                @include movil{
+                    font-size: 26px;
+                }
+                @include tablet{
+                    font-size: 27px;
+                }
+                @include laptop{
+                    font-size: 28px;
+                }
             }
             p{
                 font-family: $letra;
-                font-weight: 300;
+                font-weight: 500;
                 margin-top: 20px;
                 text-align: center;
-                font-size: 22px;
-                padding: 10px;
+                font-size: 27px;
                 word-spacing: 1px;
                 color: black;
+                background-color: $claro;
+                padding: 4px 4px;
+                @include movil{
+                    font-size: 24px;
+                }
+                @include tablet{
+                    font-size: 26px;
+                }
+                @include laptop{
+                    font-size: 26px;
+                }
             }
             img{
                 margin-top: 10px;
-                height: 350px;
-                width: 250px;
+                height: 480px;
+                width: 280px;
+            }
+            img:hover{
+                transform: scaleY(1px);
             }
             @include movil{
                 padding: 1rem;
@@ -72,7 +98,7 @@ h2{
             @include laptop{
                 padding: 1rem;
                 margin-bottom: 40px;
-                margin-left: 100px;
+                margin-left: 0px;
             }
         }
         @include movil{
@@ -85,92 +111,15 @@ h2{
         }
         @include laptop{
             display: grid;
-            grid-template-columns: 4fr 4fr;
+            grid-template-columns: 30% 30%;
         }
     }
 }
-.formulario{
-    height: 350px;
-    padding: 6px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    label{
-        margin-left: 35px;
-        font-family: $letra;
-        font-weight: 500;
-    }
-    fieldset{
-        legend{
-            margin-top: 10px;
-            margin-left: 25px;
-        }
-        color: $colorText;
-        font-size: 20px;
-        height: 340px;
-        border: 2px solid $color1;
-        @include movil{
-            height: 420px;
-            width: 300px;
-        }
-        @include tablet{
-            height: 420px;
-            width: 300px;
-        }
-    }
 
-    &__div{
-        margin: 10px;
-        height: 45px;
-        text-align: center;
-        @include movil{
-            height: auto;
-        }
-        @include tablet{
-            height: auto;
-        }
-    }
-    &__div1{
-        margin: 10px;
-        height: 45px;
-        text-align: center;
-        @include movil{
-            display: none;
-        }
-        @include tablet{
-            display: none;
-        }
-
-    }
-    &__div2{
-        margin: 10px;
-        height: 45px;
-        text-align: center;
-        @include movil{
-            margin-top: 15px;
-            height: auto;
-        }
-        @include tablet{
-            margin-top: 15px;
-            height: auto;
-        }
-    }
-    @include movil{
-        height: auto;
-    }
-    @include tablet{
-        height: auto;
-    }
-}
-.botones{
-    text-align: center;
-    height: 35px;
-    margin: 10px;
-    padding: 3px 8px;
-}
 .listaPrecios{
-    margin-right: 60px;
-    margin-top: 50px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: left;
     a{
         text-decoration: none;
         margin-right: 100px;
@@ -187,102 +136,162 @@ h2{
         }
     }
     @include movil{
-        margin-right: 0px;
-        margin-top: 25px;
-    }
-    @include tablet{
-        margin-right: 0px;
-        margin-top: 25px;
-    }
-    @include laptop{
-        margin-right: 0px;
-        margin-top: 0px;
-    }
-}
-.inputTurnos{
-    height: 25px;
-    width: 200px;
-    font-size: 17px;
-    color: $color1;
-}
-.horarios{
-    height: 350px;
-    display: grid;
-    padding: 35px 18px;
-    place-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    div{
-        background-color: transparent;
         display: flex;
-        flex-direction: column;
-        padding: 1rem;
-        justify-content: space-around;
-        border: 2px solid $colorText;
-        height: 270px;
-        width: 370px;
-        h3{
-            font-family: $letra;
-            font-weight: 500;
-            color: black;
-            font-size: 30px;
-            text-align: justify;
-            text-transform: uppercase; 
-        }
-        li{
-            text-align: center;
-            font-family: $letra;
-            font-weight: 300;
-            list-style-position: inside;
-            font-size: 25px;
-            padding: 4px;
-            color: $colorText;
-        }
-    }
-    @include movil{
-        display: none;
+        justify-content: center;
+        margin-top: 40px;
+        margin-left: 110px;
     }
     @include tablet{
-        display: none;
+        margin-left: 130px;
+        margin-top: 40px;
     }
     @include laptop{
-        padding: 0px;
+        margin-left: 110px;
+        margin-top: 4px;
     }
 }
-.domingo{
-    font-family: $letra;
-    font-weight: 500;
-    color: $colorText;
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    word-spacing: 2px;
-    letter-spacing: 1px;
-    margin: 20px;
-    @include movil{
-        display: none;
-    }
-    @include tablet{
-        display: none;
-    }
-}
-.botones{
+.formTurnos{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px 0px;
+    margin-left: 25%;
+    &__div1{
+        display: flex;
+        margin-bottom: 20px;
+        input{
+            text-align: center;
+            height: 55px;
+        }
+    }
+    &__div2{
+        margin-bottom: 20px;
+        input{
+            text-align: center;
+            height: 55px;
+        }
+        
+    }
+    &__div3{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 671px;
+        select{
+            text-align: center;
+            height: 55px;
+        }
+        @include movil{
+            width: auto;
+        }
+        @include tablet{
+            display: none;
+        }
+        @include laptop{
+            width: 512px;
+        }
+    }
+    &__div4{
+        margin-bottom: 20px;
+        textarea{
+            text-align: center;
+            height: 120px;
+        }
+    }
+    &__div5{
+        margin-bottom: 20px;
+        input{
+            text-align: center;
+            height: 55px;
+        }
+    }
+    &__div6{
+        display: flex;
+        margin-top: 20px;
+    }
+    .boton{
+        background-color: $colorText;
+        border: 2px solid $colorText;
+        color: black;
+    }
+    @include movil{
+        margin: 40px 10px;
+    }
+    @include tablet{
+        margin: auto;
+    }
 }
-.boton1{
-    margin: 8px;
-    height: 36px;
-    width: 150px;
-    text-align: center;
-    margin-top: 6px;
-    border: 1px solid whitesmoke;
+.sectionMainTurnos{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../../img/arcoiris.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    &__div1{
+        height: 480px;
+        width: 880px;
+        margin-top: 35px;
+        .img1{
+            height: 540px;
+            margin-right: 60px;
+            margin-left: 40px;
+            box-shadow: 5px 5px 5px black;
+            opacity: 0.9;
+        }
+        .img2{
+            height: 480px;
+            box-shadow: 4px 4px 4px grey;
+            @include laptop{
+                display: none;
+            }
+        }
+        margin-right: 200px;
+        margin-left: 60px;
+    }
+    @include movil{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
 }
-.boton2{
-    margin: 8px;
-    height: 36px;
-    width: 150px;
+.horarioNuevo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
     text-align: center;
-    margin-top: 6px;
-    border: 1px solid whitesmoke;
+    height: 600px;
+    width: 250px;
+    margin-right: 2px;
+    background-color: black;
+    opacity: 0.7;
+    div{
+        color: blanchedalmond;
+        h3{
+            text-align: justify;
+            margin-left: 20px;
+            @include laptop{
+                font-size: 20px;
+                margin: 8px 8px;
+            }
+        }
+        ul{
+            list-style: none;
+            li{
+                margin: 8px 0px;
+            }
+        }
+    }
+    h4{
+        color: blanchedalmond;
+        @include laptop{
+            font-size: 22px;
+            margin: 8px 8px;
+        }
+    }
 }

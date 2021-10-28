@@ -3,37 +3,32 @@
     background-color: $colorBg;
 }
 //main
-.carousel-item{
-    img{
-        width: 240px;
-    }
-}
+
 .container{
-    height: 900px;
-    display: grid;
-    grid-template-columns: 700px 370px;
-    grid-template-rows: repeat(380px) ;
-    grid-template-areas: 
-    "encabezado tutorial"
-    "cuerpo carrusel"
-    ;
+    h1{
+        text-align: justify;
+    }
     h2{
         font-family: $letra;
         font-weight: 500;
         font-size: 40px;
         word-spacing: 1px;
         color: claro;
+        text-align: center;
     }
     h3{
         font-family: $letra;
         font-weight: 500;
         color: black;
+        font-size: 22px;
     }
     p{
         font-family: $letra;
         font-weight: 300;
         color: $colorText;
-        font-size: 20px;
+        font-size: 26px;
+        line-height: 35px;
+        word-spacing: 1px;
         b{
             color: black;
         }
@@ -55,51 +50,10 @@
         color: claro;
     }
     .encabezado{
-        grid-area: "encaezado";
+        text-align: center;
     }
-    .cuerpo{
-        grid-area: "cuerpo";
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding: 0px 15px;
-    }
-    .tutorial{
-        grid-area: "tutorial";
-    }
-    .carrusel{
-        height: 450px;
-        margin-top: 30px;
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-    @include movil{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        .encabezado{
-            display: none;
-        }
-        .cuerpo{
-            display: none;
-        }
-        .carrusel{
-            display: none;
-        }
-    }
-    @include tablet{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        .encabezado{
-            display: none;
-        }
-        .carrusel{
-            display: none;
-        }
-    }
+    
+    
 }
 .b2{
     color: $colorText;
@@ -118,4 +72,74 @@
 .b3{
     color: $claro;
     font-size: 30px;
+}
+.contenidoSecBlog{
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0px;
+    .tutorial{
+        width: 700px;
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+    .carrusel{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 380px;
+        height: 345px;
+        img{
+            height: 345px;
+            width: 380px;
+        }
+        @include movil{
+            display: none;
+        }
+        @include tablet{
+            display: none;
+        }
+        @include laptop{
+            display: none;
+        }
+    }
+}
+.portada{
+    background-image: url(../../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 550px;
+    text-align: center;
+    margin-bottom: 60px;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        p{
+            font-size: 3.4rem;
+            font-family: $letra;
+            word-spacing: 2px;
+            background-color: black;
+            padding: 16px 15px;
+            letter-spacing: 1px;
+            @include tablet{
+                margin-top: 50px;
+            }
+            @include laptop{
+                display: none;
+            }
+        }
+    }
+    @include movil{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }
 }
