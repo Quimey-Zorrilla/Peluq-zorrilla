@@ -4,8 +4,6 @@
 @import "../utilities/mixin";
 @import "../utilities/extend";
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
-
 body{
     background-color: $colorBg;
 }
@@ -65,7 +63,7 @@ body{
         font-family: 'Rock Salt', cursive;
         font-size: 23px;
         @include movil{
-            font-size: 36px;
+            font-size: 33px;
             margin-top: 0px;
             letter-spacing: 0px;
             font-family: $letra;
@@ -112,20 +110,26 @@ body{
 .seccionEco{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
     margin-top: 50px;
-    height: 300px;
     align-items: center;
     &__spa{
+        align-items: center;
         text-align: center;
         padding: 0px 15px;
         width: 350px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         h3{
             margin: 12px 0px;
         }
+        p{
+            padding: 0px 10px;
+            font-family: $letra;
+            font-size: 17px;
+        }
         @include movil{
-            width: 300px;
-            margin-left: 80px;
+            width: auto;
             margin-bottom: 20px;
         }
         @include tablet{
@@ -134,15 +138,21 @@ body{
         }
     }
     &__veg{
+        align-items: center;
         text-align: center;
         padding: 0px 15px;
         width: 350px;
+        margin-bottom: 40px;
         h3{
             margin: 12px 0px;
         }
+        p{
+            padding: 0px 10px;
+            font-family: $letra;
+            font-size: 17px;
+        }
         @include movil{
-            width: 300px;
-            margin-left: 80px;
+            width: auto;
             margin-bottom: 20px;
         }
         @include tablet{
@@ -151,15 +161,21 @@ body{
         }
     }
     &__reciclaje{
+        align-items: center;
         text-align: center;
         padding: 0px 15px;
         width: 350px;
+        margin-bottom: 35px;
         h3{
             margin: 12px 0px;
         }
+        p{
+            padding: 0px 10px;
+            font-family: $letra;
+            font-size: 17px;
+        }
         @include movil{
-            width: 300px;
-            margin-left: 80px;
+            width: auto;
             margin-bottom: 20px;
         }
         @include tablet{
@@ -168,20 +184,25 @@ body{
         }
     }
     &__pet{
+        align-items: center;
         text-align: center;
         padding: 0px 15px;
         width: 350px;
-        margin-bottom: 30px;
+        margin-bottom: 55px;
         h3{
             margin: 12px 0px;
         }
+        p{
+            padding: 0px 10px;
+            font-family: $letra;
+            font-size: 17px;
+        }
         @include movil{
-            width: 300px;
-            margin-left: 80px;
+            width: auto;
             margin-bottom: 20px;
         }
         @include tablet{
-            width: 300px;
+            width: auto;
             margin-bottom: 20px;
         }
         @include laptop{
@@ -193,15 +214,11 @@ body{
         display: flex;
         flex-direction: column;
         height: auto;
-        width: 280px;
     }
     @include tablet{
-        display: grid;
-        grid-template-columns: 30% 30%;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
+        display: flex;
+        flex-direction: column;
         height: auto;
-        margin-right: 50px;
     }
 }
 .segSeccion{

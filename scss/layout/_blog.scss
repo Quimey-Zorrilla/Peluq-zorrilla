@@ -35,6 +35,9 @@
         i{
             color: black;
             background-color: $colorText;
+            @include movil{
+                display: none;
+            }
         }
     }
     span{

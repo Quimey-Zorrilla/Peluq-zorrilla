@@ -80,7 +80,7 @@ body {
     font-size: 23px; }
     @media screen and (max-width: 400px) {
       .mainIndex h3 {
-        font-size: 36px;
+        font-size: 33px;
         margin-top: 0px;
         letter-spacing: 0px;
         font-family: "Raleway", sans-serif;
@@ -123,70 +123,89 @@ body {
 .seccionEco {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
   margin-top: 50px;
-  height: 300px;
   align-items: center; }
   .seccionEco__spa {
+    align-items: center;
     text-align: center;
     padding: 0px 15px;
     width: 350px;
-    margin-bottom: 30px; }
+    margin-bottom: 40px; }
     .seccionEco__spa h3 {
       margin: 12px 0px; }
+    .seccionEco__spa p {
+      padding: 0px 10px;
+      font-family: "Raleway", sans-serif;
+      font-size: 17px; }
     @media screen and (max-width: 400px) {
       .seccionEco__spa {
-        width: 300px;
-        margin-left: 80px;
+        width: auto;
         margin-bottom: 20px; } }
     @media screen and (min-width: 401px) and (max-width: 768px) {
       .seccionEco__spa {
         width: 300px;
         margin-bottom: 20px; } }
   .seccionEco__veg {
+    align-items: center;
     text-align: center;
     padding: 0px 15px;
-    width: 350px; }
+    width: 350px;
+    margin-bottom: 40px; }
     .seccionEco__veg h3 {
       margin: 12px 0px; }
+    .seccionEco__veg p {
+      padding: 0px 10px;
+      font-family: "Raleway", sans-serif;
+      font-size: 17px; }
     @media screen and (max-width: 400px) {
       .seccionEco__veg {
-        width: 300px;
-        margin-left: 80px;
+        width: auto;
         margin-bottom: 20px; } }
     @media screen and (min-width: 401px) and (max-width: 768px) {
       .seccionEco__veg {
         width: 300px;
         margin-bottom: 20px; } }
   .seccionEco__reciclaje {
+    align-items: center;
     text-align: center;
     padding: 0px 15px;
-    width: 350px; }
+    width: 350px;
+    margin-bottom: 35px; }
     .seccionEco__reciclaje h3 {
       margin: 12px 0px; }
+    .seccionEco__reciclaje p {
+      padding: 0px 10px;
+      font-family: "Raleway", sans-serif;
+      font-size: 17px; }
     @media screen and (max-width: 400px) {
       .seccionEco__reciclaje {
-        width: 300px;
-        margin-left: 80px;
+        width: auto;
         margin-bottom: 20px; } }
     @media screen and (min-width: 401px) and (max-width: 768px) {
       .seccionEco__reciclaje {
         width: 300px;
         margin-bottom: 20px; } }
   .seccionEco__pet {
+    align-items: center;
     text-align: center;
     padding: 0px 15px;
     width: 350px;
-    margin-bottom: 30px; }
+    margin-bottom: 55px; }
     .seccionEco__pet h3 {
       margin: 12px 0px; }
+    .seccionEco__pet p {
+      padding: 0px 10px;
+      font-family: "Raleway", sans-serif;
+      font-size: 17px; }
     @media screen and (max-width: 400px) {
       .seccionEco__pet {
-        width: 300px;
-        margin-left: 80px;
+        width: auto;
         margin-bottom: 20px; } }
     @media screen and (min-width: 401px) and (max-width: 768px) {
       .seccionEco__pet {
-        width: 300px;
+        width: auto;
         margin-bottom: 20px; } }
     @media screen and (min-width: 761px) and (max-width: 1024px) {
       .seccionEco__pet {
@@ -196,16 +215,12 @@ body {
     .seccionEco {
       display: flex;
       flex-direction: column;
-      height: auto;
-      width: 280px; } }
+      height: auto; } }
   @media screen and (min-width: 401px) and (max-width: 768px) {
     .seccionEco {
-      display: grid;
-      grid-template-columns: 30% 30%;
-      grid-column-gap: 40px;
-      grid-row-gap: 40px;
-      height: auto;
-      margin-right: 50px; } }
+      display: flex;
+      flex-direction: column;
+      height: auto; } }
 
 .segSeccion {
   height: 540px;
@@ -265,7 +280,7 @@ body {
 .body {
   background-color: #886b82; }
 
-h2 {
+h1 {
   color: #f8f9f8;
   font-size: 40px;
   font-family: "Raleway", sans-serif;
@@ -276,15 +291,170 @@ h2 {
 .mainTurnos {
   margin-top: 80px; }
 
+.formTurnos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  margin-left: 25%; }
+  .formTurnos__div1 {
+    display: flex;
+    margin-bottom: 20px; }
+    .formTurnos__div1 input {
+      text-align: center;
+      height: 55px; }
+  .formTurnos__div2 {
+    margin-bottom: 20px; }
+    .formTurnos__div2 input {
+      text-align: center;
+      height: 55px; }
+  .formTurnos__div3 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 671px; }
+    .formTurnos__div3 select {
+      text-align: center;
+      height: 55px; }
+    @media screen and (max-width: 400px) {
+      .formTurnos__div3 {
+        width: auto; } }
+    @media screen and (min-width: 401px) and (max-width: 768px) {
+      .formTurnos__div3 {
+        display: none; } }
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+      .formTurnos__div3 {
+        width: 512px; } }
+  .formTurnos__div4 {
+    margin-bottom: 20px; }
+    .formTurnos__div4 textarea {
+      text-align: center;
+      height: 120px; }
+  .formTurnos__div5 {
+    margin-bottom: 20px; }
+    .formTurnos__div5 input {
+      text-align: center;
+      height: 55px; }
+  .formTurnos__div6 {
+    display: flex;
+    margin-top: 20px; }
+  .formTurnos .boton {
+    background-color: #e7d6d5;
+    border: 2px solid #e7d6d5;
+    color: black; }
+  @media screen and (max-width: 400px) {
+    .formTurnos {
+      margin: 40px 10px; } }
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    .formTurnos {
+      margin: auto; } }
+
+.listaPrecios {
+  margin-top: 60px;
+  display: flex;
+  justify-content: left; }
+  .listaPrecios a {
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 25px; }
+    .listaPrecios a h3 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 100;
+      text-align: end;
+      color: #f8f9f8; }
+    .listaPrecios a h3:hover {
+      color: #3b3545; }
+  @media screen and (max-width: 400px) {
+    .listaPrecios {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-left: 110px; } }
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    .listaPrecios {
+      margin-left: 130px;
+      margin-top: 40px; } }
+  @media screen and (min-width: 761px) and (max-width: 1024px) {
+    .listaPrecios {
+      margin-left: 110px;
+      margin-top: 4px; } }
+
+.sectionMainTurnos {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../../img/arcoiris.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 100px;
+  margin-bottom: 60px; }
+  .sectionMainTurnos__div1 {
+    height: 480px;
+    width: 880px;
+    margin-top: 35px;
+    margin-right: 200px;
+    margin-left: 60px; }
+    .sectionMainTurnos__div1 .img1 {
+      height: 540px;
+      margin-right: 60px;
+      margin-left: 40px;
+      box-shadow: 5px 5px 5px black;
+      opacity: 0.9; }
+    .sectionMainTurnos__div1 .img2 {
+      height: 480px;
+      box-shadow: 4px 4px 4px grey; }
+      @media screen and (min-width: 761px) and (max-width: 1024px) {
+        .sectionMainTurnos__div1 .img2 {
+          display: none; } }
+  @media screen and (max-width: 400px) {
+    .sectionMainTurnos {
+      display: none; } }
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    .sectionMainTurnos {
+      display: none; } }
+
+.horario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  text-align: center;
+  height: 600px;
+  width: 250px;
+  margin-right: 2px;
+  background-color: black;
+  opacity: 0.7; }
+  .horario div {
+    color: blanchedalmond; }
+    .horario div h2 {
+      text-align: justify;
+      margin-left: 20px; }
+      @media screen and (min-width: 761px) and (max-width: 1024px) {
+        .horario div h2 {
+          font-size: 20px;
+          margin: 8px 8px; } }
+    .horario div ul {
+      list-style: none; }
+      .horario div ul li {
+        margin: 8px 0px; }
+  .horario h3 {
+    color: blanchedalmond; }
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+      .horario h3 {
+        font-size: 22px;
+        margin: 8px 8px; } }
+
 .sucursales h2 {
   font-family: "Raleway", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   padding: 10px;
   margin: 20px;
   font-size: 30px;
   word-spacing: 1px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #f8f9f8; }
 
 .sucursales div {
   display: grid;
@@ -367,164 +537,10 @@ h2 {
       display: grid;
       grid-template-columns: 30% 30%; } }
 
-.listaPrecios {
-  margin-top: 60px;
-  display: flex;
-  justify-content: left; }
-  .listaPrecios a {
-    text-decoration: none;
-    margin-right: 100px;
-    font-size: 25px; }
-    .listaPrecios a h3 {
-      font-family: "Raleway", sans-serif;
-      font-weight: 100;
-      text-align: end;
-      color: #f8f9f8; }
-    .listaPrecios a h3:hover {
-      color: #3b3545; }
-  @media screen and (max-width: 400px) {
-    .listaPrecios {
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-      margin-left: 110px; } }
-  @media screen and (min-width: 401px) and (max-width: 768px) {
-    .listaPrecios {
-      margin-left: 130px;
-      margin-top: 40px; } }
-  @media screen and (min-width: 761px) and (max-width: 1024px) {
-    .listaPrecios {
-      margin-left: 110px;
-      margin-top: 4px; } }
-
-.formTurnos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0px;
-  margin-left: 25%; }
-  .formTurnos__div1 {
-    display: flex;
-    margin-bottom: 20px; }
-    .formTurnos__div1 input {
-      text-align: center;
-      height: 55px; }
-  .formTurnos__div2 {
-    margin-bottom: 20px; }
-    .formTurnos__div2 input {
-      text-align: center;
-      height: 55px; }
-  .formTurnos__div3 {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 671px; }
-    .formTurnos__div3 select {
-      text-align: center;
-      height: 55px; }
-    @media screen and (max-width: 400px) {
-      .formTurnos__div3 {
-        width: auto; } }
-    @media screen and (min-width: 401px) and (max-width: 768px) {
-      .formTurnos__div3 {
-        display: none; } }
-    @media screen and (min-width: 761px) and (max-width: 1024px) {
-      .formTurnos__div3 {
-        width: 512px; } }
-  .formTurnos__div4 {
-    margin-bottom: 20px; }
-    .formTurnos__div4 textarea {
-      text-align: center;
-      height: 120px; }
-  .formTurnos__div5 {
-    margin-bottom: 20px; }
-    .formTurnos__div5 input {
-      text-align: center;
-      height: 55px; }
-  .formTurnos__div6 {
-    display: flex;
-    margin-top: 20px; }
-  .formTurnos .boton {
-    background-color: #e7d6d5;
-    border: 2px solid #e7d6d5;
-    color: black; }
-  @media screen and (max-width: 400px) {
-    .formTurnos {
-      margin: 40px 10px; } }
-  @media screen and (min-width: 401px) and (max-width: 768px) {
-    .formTurnos {
-      margin: auto; } }
-
-.sectionMainTurnos {
-  display: flex;
-  justify-content: space-between;
-  background-image: url(../../img/arcoiris.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 100px;
-  margin-bottom: 60px; }
-  .sectionMainTurnos__div1 {
-    height: 480px;
-    width: 880px;
-    margin-top: 35px;
-    margin-right: 200px;
-    margin-left: 60px; }
-    .sectionMainTurnos__div1 .img1 {
-      height: 540px;
-      margin-right: 60px;
-      margin-left: 40px;
-      box-shadow: 5px 5px 5px black;
-      opacity: 0.9; }
-    .sectionMainTurnos__div1 .img2 {
-      height: 480px;
-      box-shadow: 4px 4px 4px grey; }
-      @media screen and (min-width: 761px) and (max-width: 1024px) {
-        .sectionMainTurnos__div1 .img2 {
-          display: none; } }
-  @media screen and (max-width: 400px) {
-    .sectionMainTurnos {
-      display: none; } }
-  @media screen and (min-width: 401px) and (max-width: 768px) {
-    .sectionMainTurnos {
-      display: none; } }
-
-.horarioNuevo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  justify-items: center;
-  text-align: center;
-  height: 600px;
-  width: 250px;
-  margin-right: 2px;
-  background-color: black;
-  opacity: 0.7; }
-  .horarioNuevo div {
-    color: blanchedalmond; }
-    .horarioNuevo div h3 {
-      text-align: justify;
-      margin-left: 20px; }
-      @media screen and (min-width: 761px) and (max-width: 1024px) {
-        .horarioNuevo div h3 {
-          font-size: 20px;
-          margin: 8px 8px; } }
-    .horarioNuevo div ul {
-      list-style: none; }
-      .horarioNuevo div ul li {
-        margin: 8px 0px; }
-  .horarioNuevo h4 {
-    color: blanchedalmond; }
-    @media screen and (min-width: 761px) and (max-width: 1024px) {
-      .horarioNuevo h4 {
-        font-size: 22px;
-        margin: 8px 8px; } }
-
 .body {
   background-color: #886b82; }
 
-h2 {
+.mainServicios h1 {
   text-align: center;
   padding: 10px 10px;
   margin-top: 50px; }
@@ -563,7 +579,7 @@ h2 {
   align-items: center;
   justify-content: center;
   text-align: center; }
-  .trabajos h3 {
+  .trabajos h2 {
     text-align: center;
     color: #e7d6d5;
     font-family: "Raleway", sans-serif;
@@ -581,17 +597,6 @@ h2 {
 
 .trabajos:hover {
   border-top: 2px solid #f8f9f8; }
-
-.listaPrecios a {
-  text-decoration: none;
-  margin-right: 100px;
-  font-size: 25px; }
-  .listaPrecios a h3 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    text-align: end;
-    margin: 30px 30px;
-    color: #f8f9f8; }
 
 .body {
   background-color: #886b82; }
@@ -703,6 +708,9 @@ h1 {
   .container p i {
     color: black;
     background-color: #e7d6d5; }
+    @media screen and (max-width: 400px) {
+      .container p i {
+        display: none; } }
 
 .container span {
   font-family: "Raleway", sans-serif;
@@ -913,12 +921,18 @@ header {
   margin-right: 120px; }
   @media screen and (max-width: 400px) {
     .navegacion {
-      margin-right: 0px; }
+      margin-right: 0px;
+      background-color: #886b82;
+      width: auto;
+      position: relative;
+      z-index: 2; }
       .navegacion .ancor--home {
         display: none; } }
   @media screen and (min-width: 401px) and (max-width: 768px) {
     .navegacion {
-      margin-right: 0px; }
+      margin-right: 0px;
+      background-color: #886b82;
+      width: auto; }
       .navegacion .ancor--home {
         display: none; } }
   .navegacion div a {

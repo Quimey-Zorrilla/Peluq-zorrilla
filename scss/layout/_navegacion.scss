@@ -11,12 +11,18 @@ header{
             display: none;
         }
         margin-right: 0px;
+        background-color: $colorBg;
+        width: auto;
+        position: relative;
+        z-index: 2;
     }
     @include tablet{
         .ancor--home{
             display: none;
         }
         margin-right: 0px;
+        background-color: $colorBg;
+        width: auto;
     }
     div{
         a{
