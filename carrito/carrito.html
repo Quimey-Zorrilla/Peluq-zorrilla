@@ -2,18 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>SERVICIOS | Pink Sheriff</title>
+        <title>STORE | Pink Sheriff</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+        <!--fontAwesome-->
+        <script src="https://kit.fontawesome.com/0fb4f3d681.js" crossorigin="anonymous"></script>
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!--css-->
         <link rel="stylesheet" href="../css/estilos.css">
         <!--meta description-->
-        <meta name="description" content="En Pink Sheriff encontrarás información de los servicios y sus precios">
+        <meta name="description" content="Para complementar tu tratamiento capilar, Pink Sheriff te ofrece una amplia variedad de productos. Consulta nuestra tienda online">
         <!--keywords-->
-        <meta name="keywords" content="PINK SHERIFF, PEINADOS, NUTRICION, CORTES, MANICURA, ALISADO, COLORACIÓN">
+        <meta name="keywords" content="PINK SHERIFF,STORE, TIENDA ONLINE, PRODUCTOS, ACCESORIOS">
     </head>
     <body class="body">
         <header><!--inicio header-->
@@ -27,76 +29,45 @@
                         <div class="navbar-nav"><!--menu de navegacion-->
                             <a class="nav-link active ancor ancor--home" aria-current="page" href="../index.html" >Home</a>
                             <a class="navbar-nav ancor" href="../pages/turnos.html">Turnos</a>
-                            <a class="navbar-nav ancor" href="../carrito/carrito.html">Productos</a>
+                            <a class="navbar-nav ancor" href="../pages/productos.html">Productos</a>
                             <a class="navbar-nav ancor" href="../pages/servicios.html">Servicios</a>
                             <a class="navbar-nav ancor" href="../pages/blog.html">Blog</a>
                         </div>
                     </div>
                 </div>
+                <ul className="navbar-nav ml-auto">  
+                    <li className="nav-item " style="list-style: none; margin-right: 40px; margin-top: 15px;">
+                        <button id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-dark"><i class="fas fa-cart-arrow-down"></i></button>
+                    </li>
+                </ul>
             </nav>
         </header>
-        <main class="mainServicios"><!--servicios-->
-            <h1 class="h2Servicios">Servicios</h1>
-            <div class="contenedorServicios">
-                <div>
-                    <div class="trabajos">
-                        <h2>Lavado</h2>
-                        <p>Lavarte el cabello previo a un corte o peinado y/o luego de una coloración: hace al inicio y/o la finalización perfecta de tu experiencia.</p>
-                    </div>
-                    <div>
-                        <img src="../img/lavado.jpg" alt="lavado" class="imgServicio">
-                    </div>
-                </div>
-                <div><!--trabajos-->
-                    <div class="trabajos">
-                        <h2>Cortes</h2>
-                        <p>Tijeras, máquinas, varios filos, precisión, técnica y sobre todo un estilo único hacen fundamental el Corte.</p>
-                    </div>
-                    <div>
-                        <img src="../img/corte.jpg" alt="corte" class="imgServicio">
-                    </div>
-                </div>
-                <div><!--trabajos-->
-                    <div class="trabajos">
-                        <h2>Peinados</h2>
-                        <p>Existe una amplia forma de llegar a tu peinado, Brushing, planchitas, ondas, y muchos más.</p>
-                    </div>
-                    <div>
-                        <img src="../img/peinado.jpg" alt="peinado" class="imgServicio">
-                    </div>
-                </div>
-                <div><!--trabajos-->
-                    <div class="trabajos">
-                        <h2>Coloración</h2>
-                        <p>El servicio de color es un universo infinito dentro de nuestro salón.</p>
-                    </div>
-                    <div>
-                        <img src="../img/coloracion.jpg" alt="coloracion" class="imgServicio">
-                    </div>
-                </div>
-                <div><!--trabajos-->
-                    <div class="trabajos">
-                        <h2>Nutrición</h2>
-                        <p>Keratina, Brillo, Hidratación, Nutrición, Reparación y Reconstrucción.</p>
-                    </div>
-                    <div>
-                        <img src="../img/nutricion.jpg" alt="nutricion" class="imgServicio">
-                    </div>
-                </div>
-                <div><!--trabajos-->
-                    <div class="trabajos">
-                        <h2>Belleza de Manos y Píes</h2>
-                        <p>Las manos son nuestra tarjeta de presentación y un mal cuidado de ellas delata nuestra edad.</p>
-                    </div>
-                    <div>
-                        <img src="../img/manos.jpg" alt="manicura" class="imgServicio">
+        <main>
+            <h1>Store</h1>
+            <div id="divProductos" class="row col-md-10" style="margin-left: 10%;"></div>
+
+            <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modal-body">
+                        
+                        </div>
+                        <div class="row ml-ato">
+                            <p id="precioTotal"></p>
+                        </div>
+                        <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="botonFinalizarCompra" >Finalizar Compra</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        <div class="listaPrecios"><!--lista de precios-->
-            <a href="../pages/precios.html"><h3>PRECIOS</h3></a>
-        </div>
         <hr>
         <footer class="footer"><!--inicio footer-->
             <div class="footer__div1">
@@ -137,7 +108,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!--Sweetalert-->
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <!--turno.js-->
-        <script src="../pages/turnos.js"></script>
+        <!--eventos.js-->
+        <script src="./eventosCarr.js"></script>
+        <!--productos.js-->
+        <script src="./producto.js"></script>
+        <!--script.js-->
+        <script src="./script.js"></script>
     </body>
 </html>

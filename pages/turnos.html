@@ -27,7 +27,7 @@
                         <div class="navbar-nav navegacionResp"><!--menu de navegacion-->
                             <a class="nav-link active ancor ancor--home" aria-current="page" href="../index.html" >Home</a>
                             <a class="navbar-nav ancor" href="../pages/turnos.html">Turnos</a>
-                            <a class="navbar-nav ancor" href="../pages/productos.html">Productos</a>
+                            <a class="navbar-nav ancor" href="../carrito/carrito.html">Productos</a>
                             <a class="navbar-nav ancor" href="../pages/servicios.html">Servicios</a>
                             <a class="navbar-nav ancor" href="../pages/blog.html">Blog</a>
                         </div>
@@ -37,56 +37,43 @@
         </header>
         <main class="mainTurnos"><!--contenido principal-->
             <h1>Turnos</h1>
-                    <form action="turnos"><!--formulario para sacar turnos-->
-                        <div class="formTurnos col-md-6">
-                            <div class="input-group formTurnos__div1">
-                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Username">
-                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Username">
-                            </div>
-                            <div class="input-group formTurnos__div2">
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="@ e-mail">
-                                <input class="form-control" type="text" placeholder="Telefono/Celular" aria-label="default input example">
-                            </div>
-                            <div class="input-group formTurnos__div5">
-                                <input class="form-control" type="datetime-local" placeholder="Dia y Hora" aria-label="default input example">
-                            </div>
-                            <div class="formTurnos__div3 col-md-4">
-                                <select class="form-select " aria-label="Default select example">
-                                    <option selected>Servicios</option>
-                                    <option value="1">Lavado</option>
-                                    <option value="2">Corte</option>
-                                    <option value="3">Coloración</option>
-                                    <option value="4">Peinado</option>
-                                    <option value="5">Nutrición</option>
-                                    <option value="6">Belleza Manos y Pies</option>
-                                </select>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Sucursal</option>
-                                    <option value="1">General Paz</option>
-                                    <option value="2">Recta Martinoli</option>
-                                    <option value="3">Nueva Córdoba</option>
-                                    <option value="4">Carlos Paz</option>
-                                </select>
-                            </div>
-                            <div class="input-group formTurnos__div4">
-                                <span class="input-group-text">Mensaje</span>
-                                <textarea class="form-control" aria-label="With textarea"></textarea>
-                            </div>
-                            <div class="d-grid gap-2 col-12 formTurnos__div6">
-                                <button class="btn btn-primary boton" type="reset">RESET</button>
-                                <button class="btn btn-primary boton" type="button">ENVIAR</button>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="listaPrecios"><!--lista de precios-->
-                        <a href="../pages/precios.html"><h3>PRECIOS</h3></a>
+            <div id="turnos"></div>
+            <div class="container col-md-6" style="margin-top: 55px;">
+                <form id="formulario"><!--formulario para sacar turnos-->
+                    <div class="formTurnos__div1 mb-3">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su Nombre">
+                        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su Apellido">
                     </div>
-                <section class="sectionMainTurnos">
-                    <div class="sectionMainTurnos__div1">
-                        <img src="../img/turno1.jpeg" alt="" class="img1">
-                        <img src="../img/turno2.jpeg" alt="" class="img2">
+                    <div class="formTurnos__div2 mb-3">
+                        <input type="email" class="form-control" id="mail" name="mail" placeholder="Ingrese su e-mail" style="margin-bottom: 15px;">
+                        <input class="form-control" type="text" id="celular" name="celular" placeholder="Ingrese su N°Telefono/Celular" >
                     </div>
-                    <div class="horario"><!--horario-->
+                    <div class="formTurnos__div3 mb-3" style="width: 100%; height: 55px;">
+                        <input type="text" class="form-control" id="servicio" name="servicio" placeholder="Ingrese el servicio de su elección" >
+                        <input type="text" class="form-control" id="sucursal" name="sucursal" placeholder="Ingrese la sucursal que desea"> 
+                    </div>
+                    <div class="formTurnos__div5 mb-3">
+                        <input class="form-control" type="datetime-local" id="fecha" name="fecha" placeholder="Elija Dia y Hora de su Turno">
+                    </div>
+                    <div class="formTurnos__div4 mb-3">
+                        <span class="input-group-text" style="color: black;">Mensaje</span>
+                        <textarea class="form-control" aria-label="With textarea" id="mensaje" name="mensaje" placeholder="Detalle el servicio elegido ..."></textarea>
+                    </div>
+                    <div class="d-grid formTurnos__div6 mb-3">
+                        <button class="btn btn-dark boton" style="height: 65px; background-color: #cda9b2; border: #cda9b2; color: black;" type="submit" id="botonTurno" >¡QUIERO MI TURNO! 
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="listaPrecios"><!--lista de precios-->
+                <a href="../pages/precios.html"><h3>PRECIOS</h3></a>
+            </div>
+            <section class="sectionMainTurnos">
+                <div class="sectionMainTurnos__div1">
+                    <img src="../img/turno1.jpeg" class="img1">
+                    <img src="../img/turno2.jpeg" class="img2">
+                </div>
+                <div class="horario"><!--horario-->
                         <div>
                             <h2>MAÑANA</h2>
                             <ul>
@@ -148,14 +135,16 @@
         <footer class="footer"><!--inicio footer-->
             <div class="footer__div1">
                 <h4>¿Quieres hacernos alguna consulta? - ¿Dejarnos alguna sugerencia?</h4>
-                <div class="footer__div1__informacion">
-                    <div>
-                        <span>Nombre</span><input type="text" placeholder="Nombre">
-                        <span>E-mail</span><input type="email" placeholder="e-mail">
-                    </div>
-                    <div class="footer__div1__informacion__mensaje">
-                        <span>Mensaje</span><input class="inputMsj"type="text" placeholder="Mensaje"><button type="submit">ENVIAR</button>
-                    </div>
+                <div class="footer__div1__informacion ">
+                    <form id="formFooter">
+                        <div>
+                            <span>Nombre</span><input type="text" id="nombreFooter" name="nombreFooter">
+                            <span>E-mail</span><input type="email" id="mailFooter" name="mailFooter">
+                        </div>
+                        <div class="footer__div1__informacion__mensaje">
+                            <span>Mensaje</span><input class="inputMsj"type="text" id="msjFooter" name="msjFooter" ><button type="submit" id="btnFooter">ENVIAR</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <hr>
@@ -176,6 +165,13 @@
                 </div>
             </div>
         </footer>
+        <!--Jquery-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!--Bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!--Sweetalert-->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--turnos.js-->
+        <script src="./turnos.js"></script>
     </body>
 </html>

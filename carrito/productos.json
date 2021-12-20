@@ -1,0 +1,282 @@
+[
+    {
+        "nombre": "Ampolla Nutritiva",
+        "marca": "FIDELITÉ",
+        "precio": 500,
+        "stock": 30,
+        "img": "ampolla-nutritiva.jpg"
+    },
+    {
+        "nombre": "Ampolla Reparación",
+        "marca": "HAIRSSIME",
+        "precio": 550,
+        "stock": 30,
+        "img": "ampolla-reparacion.jpg"
+    },
+    {
+        "nombre": "Serum",
+        "marca": "MALA",
+        "precio": 400,
+        "stock": 30,
+        "img": "serum.jpg"
+    },
+    {
+        "nombre": "Loción Anticaida",
+        "marca": "LAMBDAPIL",
+        "precio": 600,
+        "stock": 30,
+        "img": "locion-anticaida.jpg"
+    },
+    {
+        "nombre": "Spray Aclarante",
+        "marca": "CAPILATIS",
+        "precio": 600,
+        "stock": 30,
+        "img": "spray-aclarante.jpg"
+    },
+    {
+        "nombre": "Spray Antifrizz",
+        "marca": "SYATEM",
+        "precio": 800,
+        "stock": 30,
+        "img": "spray-antifrizz.png"
+    },
+    {
+        "nombre": "Máscara Reparación",
+        "marca": "NATURA",
+        "precio": 700,
+        "stock": 30,
+        "img": "reparacion-profunda.jpg"
+    },
+    {
+        "nombre": "Brillo Sublime",
+        "marca": "HAIRTHERAPY",
+        "precio": 820,
+        "stock": 30,
+        "img": "aceite-brillo.jpg"
+    },
+    {
+        "nombre": "Óleo",
+        "marca": "KÉRASTASE",
+        "precio": 1000,
+        "stock": 30,
+        "img": "aceite-oleo.jpg"
+    },
+    {
+        "nombre": "Baño de Crema",
+        "marca": "SYATEM",
+        "precio": 340,
+        "stock": 30,
+        "img": "baño-keratinico.jpg"
+    },
+    {
+        "nombre": "Máscara",
+        "marca": "KÉRASTASE",
+        "precio": 1500,
+        "stock": 30,
+        "img": "mascara-kerastase.jpg"
+    },
+    {
+        "nombre": "Máscara Reconstrucción",
+        "marca": "NATURA",
+        "precio": 850,
+        "stock": 30,
+        "img": "mascara-natura.jpg"
+    },
+    {
+        "nombre": "Acondicionador C/Keratina",
+        "marca": "KERATIN",
+        "precio": 1200,
+        "stock": 30,
+        "img": "acondicionador-keratina.jpg"
+    },
+    {
+        "nombre": "Acondicionador UV",
+        "marca": "CAPILATIS",
+        "precio": 450,
+        "stock": 30,
+        "img": "acondicionador-proteccionUV.jpg"
+    },
+    {
+        "nombre": "Crema de Peinar",
+        "marca": "BEKIM",
+        "precio": 500,
+        "stock": 30,
+        "img": "crema-peinar.png"
+    },
+    {
+        "nombre": "Alisado sin Formol",
+        "marca": "NOV",
+        "precio": 2030,
+        "stock": 30,
+        "img": "alisado.jpg"
+    },
+    {
+        "nombre": "Bálsamo Revitalizante",
+        "marca": "FLEXUAVE",
+        "precio": 900,
+        "stock": 30,
+        "img": "balsamo-revitalizante.jpg"
+    },
+    {
+        "nombre": "Shampoo + Ampolla",
+        "marca": "KÉRASTASE",
+        "precio": 2000,
+        "stock": 30,
+        "img": "shampoo-ampollas.jpg"
+    },
+    {
+        "nombre": "Shampoo Anticaspa",
+        "marca": "DERCOS",
+        "precio": 1000,
+        "stock": 30,
+        "img": "shampoo-anticaspa.jpg"
+    },
+    {
+        "nombre": "Shampoo Cabello Seco",
+        "marca": "NATURA",
+        "precio": 700,
+        "stock": 30,
+        "img": "shampoo-cabello-seco.jpg"
+    },
+    {
+        "nombre": "Shampoo Reconstrucción",
+        "marca": "NATURA",
+        "precio": 700,
+        "stock": 30,
+        "img": "shampoo-renovador.jpg"
+    },
+    {
+        "nombre": "Shampoo Cabello Teñido",
+        "marca": "TAN NATURAL",
+        "precio": 650,
+        "stock": 30,
+        "img": "shampoo-cabello-teñido.jpg"
+    },
+    {
+        "nombre": "Shampoo Crecimiento",
+        "marca": "MAGIC HAIR",
+        "precio": 800,
+        "stock": 30,
+        "img": "Shampoo-crecimiento.jpg"
+    },
+    {
+        "nombre": "Shampoo Mineral",
+        "marca": "DERCOS",
+        "precio": 500,
+        "stock": 30,
+        "img": "shampoo-mineral.jpg"
+    },
+    {
+        "nombre": "Shampoo Matizador",
+        "marca": "HAIRSSIME",
+        "precio": 1400,
+        "stock": 30,
+        "img": "shampoo-neutro.jpg"
+    },
+    {
+        "nombre": "Shampoo Protector",
+        "marca": "KÉRASTASE",
+        "precio": 2000,
+        "stock": 30,
+        "img": "shampoo-kerastase.png"
+    },
+    {
+        "nombre": "Shampoo Matizador",
+        "marca": "ISSUE",
+        "precio": 2000,
+        "stock": 30,
+        "img": "shampoo-matizador.jpg"
+    },
+    {
+        "nombre": "Kit Alisado Masculino",
+        "marca": "LÓREAL",
+        "precio": 1300,
+        "stock": 30,
+        "img": "kit-alisado-masculino.png"
+    },
+    {
+        "nombre": "Shampoo Anticaida",
+        "marca": "CËPAGE",
+        "precio": 2000,
+        "stock": 30,
+        "img": "kit-anticaida.jpg"
+    },
+    {
+        "nombre": "Kit Anticaspa",
+        "marca": "MAGIC HAIR",
+        "precio": 1400,
+        "stock": 30,
+        "img": "kit-anticaspa.jpg"
+    },
+    {
+        "nombre": "Kit Antifriz",
+        "marca": "NATURA",
+        "precio": 3600,
+        "stock": 30,
+        "img": "kit-antifrizz.jpg"
+    },
+    {
+        "nombre": "Kit Reparación Intensiva",
+        "marca": "SHEET",
+        "precio": 5000,
+        "stock": 30,
+        "img": "kit-intensivo.jpg"
+    },
+    {
+        "nombre": "Kit Cabello Dañado",
+        "marca": "BIOLAGE",
+        "precio": 1800,
+        "stock": 30,
+        "img": "kit-cabello-dañado.jpg"
+    },
+    {
+        "nombre": "Kit Reparación",
+        "marca": "OLAPLEX",
+        "precio": 2000,
+        "stock": 30,
+        "img": "kit-reparacion.png"
+    },
+    {
+        "nombre": "Kit Restauración",
+        "marca": "OLAPLEX",
+        "precio": 3000,
+        "stock": 30,
+        "img": "kit-restauracion.jpg"
+    },
+    {
+        "nombre": "Kit Sólido",
+        "marca": "SENTIDA BOTÁNICA",
+        "precio": 500,
+        "stock": 30,
+        "img": "kit-solido.jpg"
+    },
+    {
+        "nombre": "Tintura N°1",
+        "marca": "KOLESTON",
+        "precio": 800,
+        "stock": 30,
+        "img": "tintura-koleston.jpg"
+    },
+    {
+        "nombre": "Tintura N°2",
+        "marca": "LÓREAL",
+        "precio": 950,
+        "stock": 30,
+        "img": "tintura-loreal1.jpg"
+    },
+    {
+        "nombre": "Tintura N°3",
+        "marca": "LÓREAL",
+        "precio": 950,
+        "stock": 30,
+        "img": "tintura-loreal2.jpg"
+    },
+    {
+        "nombre": "Tintura N°4",
+        "marca": "LÓREAL",
+        "precio": 950,
+        "stock": 30,
+        "img": "tintura-loreal3.jpg"
+    }
+]
