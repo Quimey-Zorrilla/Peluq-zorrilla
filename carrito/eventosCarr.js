@@ -53,26 +53,26 @@ function cargarProductosModal(productosDelStorage) {
     productosDelStorage.forEach((productoCarrito, indice) => {
         
         modalBody.innerHTML += `
-            <div class="card border-primary mb-3" id ="productoCarrito${indice}" style="max-width: 540px;">
+            <div class="card mb-3 modalCard1" id ="productoCarrito${indice}" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="./imgCarr/${productoCarrito.img}" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title cardTitulo">${productoCarrito.nombre}</h5>
+                            <div class="row">
+                                <p class="card-text">Cantidad: ${productoCarrito.cant}</p>
+                                <button class= "btn btn-outline-secondary btnCantidad" id="sum${indice}"><i class="fas fa-plus"></i></button>
+                                <button class= "btn btn-outline-secondary btnCantidad" id="rest${indice}"><i class="fas fa-minus"></i></button> 
+                            </div>
+                            <p class="card-text precio">$${new Intl.NumberFormat("de-DE").format(productoCarrito.precio * productoCarrito.cant)}</p> 
+                            <button class= "btn btn-danger btnEliminar" id="botonEliminar${indice}"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
                 </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h5 class="card-title">${productoCarrito.nombre}</h5>
-                <div class="row">
-                    <p class="card-text">Cantidad: ${productoCarrito.cant}</p>
-                    <button class= "btn btn-outline-secondary" id="sum${indice}"><i class="fas fa-plus"></i></button>
-                    <button class= "btn btn-outline-secondary" id="rest${indice}"><i class="fas fa-minus"></i></button> 
-                </div>
-                <p class="card-text">$${new Intl.NumberFormat("de-DE").format(productoCarrito.precio * productoCarrito.cant)}</p> 
-                <button class= "btn btn-danger" id="botonEliminar${indice}"><i class="fas fa-trash-alt"></i></button>
             </div>
-            </div>
-            </div>
-        </div>
-    `
+        `
 })
 cargarEventosModal(productosDelStorage)
 compraTotal(productosDelStorage)

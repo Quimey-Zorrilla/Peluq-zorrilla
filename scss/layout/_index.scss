@@ -37,8 +37,8 @@ body{
         color: black;
         text-align: right;
         font-family: $letra;
-        font-weight: 100;
-        font-size: 50px;
+        font-weight: 200;
+        font-size: 44px;
         text-transform: uppercase;
         @include movil{
             font-size: 34px;
@@ -59,7 +59,7 @@ body{
         letter-spacing: 1px;
         text-align: center;
         font-family: 'Rock Salt', cursive;
-        font-size: 38px;
+        font-size: 35px;
         line-height: 100px;
         @include movil{
             font-size: 33px;
