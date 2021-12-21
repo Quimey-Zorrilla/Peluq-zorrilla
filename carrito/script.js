@@ -11,13 +11,13 @@ fetch('./productos.json')
 .then(dataProductos => {
     dataProductos.forEach((productoEnArray, indice)=> {
     divProductos.innerHTML += `
-        <div class="card border-dark mb-3" id="producto${indice}" style="max-width: 20rem; margin:8px">
-            <div class="card-header">${productoEnArray.nombre}</div>
+        <div class="card border-dark mb-3 cardProducto" id="producto${indice}" style="max-width: 20rem; margin:8px">
+            <div class="card-header cardTitulo">${productoEnArray.nombre}</div>
             <img src="./imgCarr/${productoEnArray.img}" class="card-img-top" alt="...">
             <div class="card-body">
-                <h4 class="card-title">${productoEnArray.marca}</h4>
-                <p class="card-text">$${productoEnArray.precio}</p>
-                <button id="boton${indice}" class="btn btn-light"><i class="fas fa-cart-plus fa-1x"></i></button>
+                <h4 class="card-title cardTitulo">${productoEnArray.marca}</h4>
+                <p class="card-text precio">$${productoEnArray.precio}</p>
+                <button id="boton${indice}" class="btn btn-light boton"><i class="fas fa-cart-plus fa-2x icono"></i></button>
             </div>
         </div>
         `

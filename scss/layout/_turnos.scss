@@ -93,6 +93,7 @@ h1{
 }
 //precios de los servicios
 .listaPrecios{
+    margin-left: 40px;
     margin-top: 60px;
     display: flex;
     justify-content: left;
@@ -103,7 +104,8 @@ h1{
 
         h3{
             font-family: $letra;
-            font-weight: 100;
+            font-weight: 300;
+            font-size: 35px;
             text-align: end;
             color: $claro;
         }
@@ -138,6 +140,7 @@ h1{
         height: 480px;
         width: 880px;
         margin-top: 35px;
+        margin-left: 20%;
         .img1{
             height: 540px;
             margin-right: 60px;

@@ -77,21 +77,21 @@
         "img": "mascara-kerastase.jpg"
     },
     {
-        "nombre": "Máscara Reconstrucción",
+        "nombre": "Máscara Reconst",
         "marca": "NATURA",
         "precio": 850,
         "stock": 30,
         "img": "mascara-natura.jpg"
     },
     {
-        "nombre": "Acondicionador C/Keratina",
+        "nombre": "Acond c/Keratina",
         "marca": "KERATIN",
         "precio": 1200,
         "stock": 30,
         "img": "acondicionador-keratina.jpg"
     },
     {
-        "nombre": "Acondicionador UV",
+        "nombre": "Acond UV",
         "marca": "CAPILATIS",
         "precio": 450,
         "stock": 30,
@@ -105,14 +105,14 @@
         "img": "crema-peinar.png"
     },
     {
-        "nombre": "Alisado sin Formol",
+        "nombre": "Alisado s/Formol",
         "marca": "NOV",
         "precio": 2030,
         "stock": 30,
         "img": "alisado.jpg"
     },
     {
-        "nombre": "Bálsamo Revitalizante",
+        "nombre": "Bálsamo",
         "marca": "FLEXUAVE",
         "precio": 900,
         "stock": 30,
@@ -133,28 +133,28 @@
         "img": "shampoo-anticaspa.jpg"
     },
     {
-        "nombre": "Shampoo Cabello Seco",
+        "nombre": "Shampoo Cab.Seco",
         "marca": "NATURA",
         "precio": 700,
         "stock": 30,
         "img": "shampoo-cabello-seco.jpg"
     },
     {
-        "nombre": "Shampoo Reconstrucción",
+        "nombre": "Shampoo Reconst",
         "marca": "NATURA",
         "precio": 700,
         "stock": 30,
         "img": "shampoo-renovador.jpg"
     },
     {
-        "nombre": "Shampoo Cabello Teñido",
+        "nombre": "Shampoo CabTeñido",
         "marca": "TAN NATURAL",
         "precio": 650,
         "stock": 30,
         "img": "shampoo-cabello-teñido.jpg"
     },
     {
-        "nombre": "Shampoo Crecimiento",
+        "nombre": "Shampoo",
         "marca": "MAGIC HAIR",
         "precio": 800,
         "stock": 30,
@@ -189,7 +189,7 @@
         "img": "shampoo-matizador.jpg"
     },
     {
-        "nombre": "Kit Alisado Masculino",
+        "nombre": "Kit-Alisado Masc",
         "marca": "LÓREAL",
         "precio": 1300,
         "stock": 30,
@@ -203,42 +203,42 @@
         "img": "kit-anticaida.jpg"
     },
     {
-        "nombre": "Kit Anticaspa",
+        "nombre": "Kit-Anticaspa",
         "marca": "MAGIC HAIR",
         "precio": 1400,
         "stock": 30,
         "img": "kit-anticaspa.jpg"
     },
     {
-        "nombre": "Kit Antifriz",
+        "nombre": "Kit-Antifriz",
         "marca": "NATURA",
         "precio": 3600,
         "stock": 30,
         "img": "kit-antifrizz.jpg"
     },
     {
-        "nombre": "Kit Reparación Intensiva",
+        "nombre": "Kit-Rep",
         "marca": "SHEET",
         "precio": 5000,
         "stock": 30,
         "img": "kit-intensivo.jpg"
     },
     {
-        "nombre": "Kit Cabello Dañado",
+        "nombre": "Kit-CabDañado",
         "marca": "BIOLAGE",
         "precio": 1800,
         "stock": 30,
         "img": "kit-cabello-dañado.jpg"
     },
     {
-        "nombre": "Kit Reparación",
+        "nombre": "Kit-Reparación",
         "marca": "OLAPLEX",
         "precio": 2000,
         "stock": 30,
         "img": "kit-reparacion.png"
     },
     {
-        "nombre": "Kit Restauración",
+        "nombre": "Kit-Restauración",
         "marca": "OLAPLEX",
         "precio": 3000,
         "stock": 30,

@@ -33,14 +33,12 @@ body{
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    h2{
+    h1{
         color: black;
-        border-right: 2px solid $color1;
-        border-left: 2px solid $color1;
         text-align: right;
         font-family: $letra;
         font-weight: 100;
-        font-size: 45px;
+        font-size: 50px;
         text-transform: uppercase;
         @include movil{
             font-size: 34px;
@@ -61,7 +59,8 @@ body{
         letter-spacing: 1px;
         text-align: center;
         font-family: 'Rock Salt', cursive;
-        font-size: 23px;
+        font-size: 38px;
+        line-height: 100px;
         @include movil{
             font-size: 33px;
             margin-top: 0px;
@@ -91,22 +90,7 @@ body{
     }
 }
 
-.suscripcionBoton{
-    background: rgb(205,169,178);
-    background: linear-gradient(162deg, rgba(205,169,178,1) 0%, rgba(136,107,130,1) 40%, rgba(231,214,213,1) 89%);
-    height: 45px;
-    width: 185px;
-    text-align: center;
-    margin-top: 40px;
-    border-radius: 40px;
-    &__palabra{
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        color: black;
-    }
-}
+
 .seccionEco{
     display: flex;
     justify-content: space-evenly;
@@ -225,6 +209,7 @@ body{
     height: 540px;
     margin-top: 35px;
     .contenidoSec{
+        margin-left: 10%;
         display: flex;
         justify-content: space-between;
         height: auto;

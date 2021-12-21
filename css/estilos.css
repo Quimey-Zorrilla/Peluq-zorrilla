@@ -50,23 +50,21 @@ body {
   flex-direction: column;
   justify-content: left;
   align-items: center; }
-  .mainIndex h2 {
+  .mainIndex h1 {
     color: black;
-    border-right: 2px solid #3b3545;
-    border-left: 2px solid #3b3545;
     text-align: right;
     font-family: "Raleway", sans-serif;
     font-weight: 100;
-    font-size: 45px;
+    font-size: 50px;
     text-transform: uppercase; }
     @media screen and (max-width: 400px) {
-      .mainIndex h2 {
+      .mainIndex h1 {
         font-size: 34px;
         border: none;
         font-weight: 300;
         text-align: center; } }
     @media screen and (min-width: 401px) and (max-width: 768px) {
-      .mainIndex h2 {
+      .mainIndex h1 {
         font-size: 34px;
         border: none;
         font-weight: 300;
@@ -77,7 +75,8 @@ body {
     letter-spacing: 1px;
     text-align: center;
     font-family: 'Rock Salt', cursive;
-    font-size: 23px; }
+    font-size: 38px;
+    line-height: 100px; }
     @media screen and (max-width: 400px) {
       .mainIndex h3 {
         font-size: 33px;
@@ -104,21 +103,6 @@ body {
       height: auto;
       display: flex;
       justify-content: start; } }
-
-.suscripcionBoton {
-  background: #cda9b2;
-  background: linear-gradient(162deg, #cda9b2 0%, #886b82 40%, #e7d6d5 89%);
-  height: 45px;
-  width: 185px;
-  text-align: center;
-  margin-top: 40px;
-  border-radius: 40px; }
-  .suscripcionBoton__palabra {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    color: black; }
 
 .seccionEco {
   display: flex;
@@ -226,6 +210,7 @@ body {
   height: 540px;
   margin-top: 35px; }
   .segSeccion .contenidoSec {
+    margin-left: 10%;
     display: flex;
     justify-content: space-between;
     height: auto; }
@@ -352,6 +337,7 @@ h1 {
       margin: auto; } }
 
 .listaPrecios {
+  margin-left: 40px;
   margin-top: 60px;
   display: flex;
   justify-content: left; }
@@ -361,7 +347,8 @@ h1 {
     font-size: 25px; }
     .listaPrecios a h3 {
       font-family: "Raleway", sans-serif;
-      font-weight: 100;
+      font-weight: 300;
+      font-size: 35px;
       text-align: end;
       color: #f8f9f8; }
     .listaPrecios a h3:hover {
@@ -393,6 +380,7 @@ h1 {
     height: 480px;
     width: 880px;
     margin-top: 35px;
+    margin-left: 20%;
     margin-right: 200px;
     margin-left: 60px; }
     .sectionMainTurnos__div1 .img1 {
@@ -942,7 +930,7 @@ header {
 
 .ancor {
   font-family: 'Neucha', cursive;
-  font-size: 25px;
+  font-size: 28px;
   padding: 5px 5px;
   color: #e7d6d5;
   margin-top: 16px;
